@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata minClientVersion="2.12">
     <id>System.Text.Encoding.Extensions</id>
-    <version>4.0.11</version>
+    <version>4.3.0</version>
     <title>System.Text.Encoding.Extensions</title>
     <authors>Microsoft</authors>
     <owners>microsoft,dotnetframework</owners>
@@ -20,7 +20,7 @@ System.Text.UTF7Encoding
 System.Text.UTF32Encoding
  
 When using NuGet 3.x this package requires at least version 3.4.</description>
-    <releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799417</releaseNotes>
+    <releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</releaseNotes>
     <copyright>© Microsoft Corporation.  All rights reserved.</copyright>
     <serviceable>true</serviceable>
     <dependencies>
@@ -28,22 +28,22 @@ When using NuGet 3.x this package requires at least version 3.4.</description>
       <group targetFramework="MonoTouch1.0" />
       <group targetFramework=".NETFramework4.5" />
       <group targetFramework=".NETCore5.0">
-        <dependency id="Microsoft.NETCore.Platforms" version="1.0.1" />
-        <dependency id="Microsoft.NETCore.Targets" version="1.0.1" />
-        <dependency id="System.Runtime" version="4.1.0" />
-        <dependency id="System.Text.Encoding" version="4.0.11" />
+        <dependency id="Microsoft.NETCore.Platforms" version="1.1.0" />
+        <dependency id="Microsoft.NETCore.Targets" version="1.1.0" />
+        <dependency id="System.Runtime" version="4.3.0" />
+        <dependency id="System.Text.Encoding" version="4.3.0" />
       </group>
       <group targetFramework=".NETStandard1.0">
-        <dependency id="Microsoft.NETCore.Platforms" version="1.0.1" />
-        <dependency id="Microsoft.NETCore.Targets" version="1.0.1" />
-        <dependency id="System.Runtime" version="4.1.0" />
-        <dependency id="System.Text.Encoding" version="4.0.11" />
+        <dependency id="Microsoft.NETCore.Platforms" version="1.1.0" />
+        <dependency id="Microsoft.NETCore.Targets" version="1.1.0" />
+        <dependency id="System.Runtime" version="4.3.0" />
+        <dependency id="System.Text.Encoding" version="4.3.0" />
       </group>
       <group targetFramework=".NETStandard1.3">
-        <dependency id="Microsoft.NETCore.Platforms" version="1.0.1" />
-        <dependency id="Microsoft.NETCore.Targets" version="1.0.1" />
-        <dependency id="System.Runtime" version="4.1.0" />
-        <dependency id="System.Text.Encoding" version="4.0.11" />
+        <dependency id="Microsoft.NETCore.Platforms" version="1.1.0" />
+        <dependency id="Microsoft.NETCore.Targets" version="1.1.0" />
+        <dependency id="System.Runtime" version="4.3.0" />
+        <dependency id="System.Text.Encoding" version="4.3.0" />
       </group>
       <group targetFramework=".NETPortable0.0-Profile259" />
       <group targetFramework="Windows8.0" />

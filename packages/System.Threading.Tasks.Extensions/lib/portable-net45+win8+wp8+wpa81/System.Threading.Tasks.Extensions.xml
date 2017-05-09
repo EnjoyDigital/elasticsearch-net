@@ -4,6 +4,73 @@
         <name>System.Threading.Tasks.Extensions</name>
     </assembly>
     <members>
+        <member name="T:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute">
+            <summary>
+            Indicates the type of the async method builder that should be used by a language compiler to
+            build the attributed type when used as the return type of an async method.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute.#ctor(System.Type)">
+            <summary>Initializes the <see cref="T:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute"/>.</summary>
+            <param name="builderType">The <see cref="T:System.Type"/> of the associated builder.</param>
+        </member>
+        <member name="P:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute.BuilderType">
+            <summary>Gets the <see cref="T:System.Type"/> of the associated builder.</summary>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1">
+            <summary>Represents a builder for asynchronous methods that returns a <see cref="T:System.Threading.Tasks.ValueTask`1"/>.</summary>
+            <typeparam name="TResult">The type of the result.</typeparam>
+        </member>
+        <member name="F:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1._methodBuilder">
+            <summary>The <see cref="T:System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1"/> to which most operations are delegated.</summary>
+        </member>
+        <member name="F:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1._result">
+            <summary>The result for this builder, if it's completed before any awaits occur.</summary>
+        </member>
+        <member name="F:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1._haveResult">
+            <summary>true if <see cref="F:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1._result"/> contains the synchronous result for the async method; otherwise, false.</summary>
+        </member>
+        <member name="F:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1._useBuilder">
+            <summary>true if the builder should be used for setting/getting the result; otherwise, false.</summary>
+        </member>
+        <member name="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.Create">
+            <summary>Creates an instance of the <see cref="T:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1"/> struct.</summary>
+            <returns>The initialized instance.</returns>
+        </member>
+        <member name="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.Start``1(``0@)">
+            <summary>Begins running the builder with the associated state machine.</summary>
+            <typeparam name="TStateMachine">The type of the state machine.</typeparam>
+            <param name="stateMachine">The state machine instance, passed by reference.</param>
+        </member>
+        <member name="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)">
+            <summary>Associates the builder with the specified state machine.</summary>
+            <param name="stateMachine">The state machine instance to associate with the builder.</param>
+        </member>
+        <member name="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(`0)">
+            <summary>Marks the task as successfully completed.</summary>
+            <param name="result">The result to use to complete the task.</param>
+        </member>
+        <member name="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetException(System.Exception)">
+            <summary>Marks the task as failed and binds the specified exception to the task.</summary>
+            <param name="exception">The exception to bind to the task.</param>
+        </member>
+        <member name="P:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.Task">
+            <summary>Gets the task for this builder.</summary>
+        </member>
+        <member name="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.AwaitOnCompleted``2(``0@,``1@)">
+            <summary>Schedules the state machine to proceed to the next action when the specified awaiter completes.</summary>
+            <typeparam name="TAwaiter">The type of the awaiter.</typeparam>
+            <typeparam name="TStateMachine">The type of the state machine.</typeparam>
+            <param name="awaiter">the awaiter</param>
+            <param name="stateMachine">The state machine.</param>
+        </member>
+        <member name="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.AwaitUnsafeOnCompleted``2(``0@,``1@)">
+            <summary>Schedules the state machine to proceed to the next action when the specified awaiter completes.</summary>
+            <typeparam name="TAwaiter">The type of the awaiter.</typeparam>
+            <typeparam name="TStateMachine">The type of the state machine.</typeparam>
+            <param name="awaiter">the awaiter</param>
+            <param name="stateMachine">The state machine.</param>
+        </member>
         <member name="T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1">
             <summary>Provides an awaitable type that enables configured awaits on a <see cref="T:System.Threading.Tasks.ValueTask`1"/>.</summary>
             <typeparam name="TResult">The type of the result produced.</typeparam>
@@ -177,6 +244,10 @@
         </member>
         <member name="M:System.Threading.Tasks.ValueTask`1.ToString">
             <summary>Gets a string-representation of this <see cref="T:System.Threading.Tasks.ValueTask`1"/>.</summary>
+        </member>
+        <member name="M:System.Threading.Tasks.ValueTask`1.CreateAsyncMethodBuilder">
+            <summary>Creates a method builder for use with an async method.</summary>
+            <returns>The created builder.</returns>
         </member>
     </members>
 </doc>

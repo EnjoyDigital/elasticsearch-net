@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata minClientVersion="2.12">
     <id>System.Reflection.Emit.ILGeneration</id>
-    <version>4.0.1</version>
+    <version>4.3.0</version>
     <title>System.Reflection.Emit.ILGeneration</title>
     <authors>Microsoft</authors>
     <owners>microsoft,dotnetframework</owners>
@@ -21,7 +21,7 @@ System.Reflection.Emit.ParameterBuilder
 System.Reflection.Emit.SignatureHelper
  
 When using NuGet 3.x this package requires at least version 3.4.</description>
-    <releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799417</releaseNotes>
+    <releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</releaseNotes>
     <copyright>© Microsoft Corporation.  All rights reserved.</copyright>
     <serviceable>true</serviceable>
     <dependencies>
@@ -29,9 +29,9 @@ When using NuGet 3.x this package requires at least version 3.4.</description>
       <group targetFramework="MonoTouch1.0" />
       <group targetFramework=".NETFramework4.5" />
       <group targetFramework=".NETStandard1.0">
-        <dependency id="System.Reflection" version="4.1.0" />
-        <dependency id="System.Reflection.Primitives" version="4.0.1" />
-        <dependency id="System.Runtime" version="4.1.0" />
+        <dependency id="System.Reflection" version="4.3.0" />
+        <dependency id="System.Reflection.Primitives" version="4.3.0" />
+        <dependency id="System.Runtime" version="4.3.0" />
       </group>
       <group targetFramework=".NETPortable0.0-Profile49" />
       <group targetFramework="WindowsPhone8.0" />
